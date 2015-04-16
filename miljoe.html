@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+        <base href="slides/">
+		<title>Miljøvurdering - Teknologi C - forår 2015</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="slides/lib/js/html5shiv.js"></script>
+		<![endif]-->
+        
+        <style>
+            /*
+            th {
+                text-align: center;
+                background-color: rgba(255, 100, 100, 0.2);
+            }
+            td {
+                border: 1px solid blue;
+                background-color: rgba(100, 100, 255, 0.2);
+                text-align: left;
+                vertical-align: middle;
+                
+                transform: rotate(90deg) translateX(80px);
+            }
+            */
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <h1>Miljøvurdering</h1>
+                    <p>Teknologi C - 2014/2015</p>
+                </section>
+                
+                <section data-markdown>
+                    <script type="text/template">
+##Miljøvurdering af et produkt
+
+* Vugge-til-grav analyse (LCA)
+  * Kaldes også LivsCyklus Analyse (Life Cycle Analysis)
+* Specielt for imaterielle produkter
+  
+                    </script>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+##LivsCyklus Analyse (Life Cycle Analysis)
+
+* Afgrænsning
+    * f.eks. Sammenligning af produkter med samme ydelse
+    * f.eks. Vurdering af en specifik ydelse, 
+        * brygning af en liter kaffe, 2 gange om dagen i 5 år
+* Produktets levetid nedbrydes i faser
+* Energi- og Materiale strømme opgøres
+* Vurdering
+
+                        </script>
+                    </section>
+                
+                    <section data-markdown>
+                        <script type="text/template">
+##LivsCyklus Analyse (Life Cycle Analysis)
+![Hovedelementer](../images/LCA-hovedelementer.png)
+                        </script>
+                    </section>
+
+                    
+                       <section>
+                        <h2>Definér ydelsen</h2>
+            <blockquote style="text-align: left">                                    
+            Tal med salgs- og marketingsfolkene om, hvad produktets ydelse er,
+            for salgs- og marketingsfolkene vil have en del information om kunders
+            inklusive slutbrugeres krav og ønsker, fordi de har betydning for
+            virksomhedens salg og markedsføring.<br>
+            I den sidste ende er det nemlig kunden, der afgør, hvad ydelsen for
+            produktet er. Det er hverken dig eller andre på virksomheden, ikke
+            engang den person, der har opfundet eller udviklet produktet (selv
+            om det nok er et meget godt sted at rådføre sig).                    
+            </blockquote> 
+
+                    </section>
+                    
+                    <section data-markdown>
+                        <script type="text/template">
+##Hospitalkitler (tænkt eksempel)
+
+Hospitaler køber kitler til personalet, og de vaskes hver dag. 
+
+Det bliver til
+omkring 100 gange vask pr. kittel, før de smides ud. Man kan få dem i
+ren bomuld og i en blanding af polyester og bomuld. I visse
+polyester/bomuldskitler vaskes bomuldsfibrene langsomt ud, og efter 20
+ganges vask begynder de at blive statisk elektriske, dårligere til at absorbere
+fugt og gennemsigtige. Det betyder, at sygeplejerskerne ofte <strong>tager
+en T-shirt på under kitlen</strong>, hvad de ikke så ofte gør med de rene bomuldskitler.
+Kitlens ydelse var altså ikke blot 1 stk. hygiejnisk og tilpas varm
+hospitalsuniform, men også behagelig følelse mod huden, fugtabsorption
+og beskyttelse mod nysgerrige blikke. 
+
+Hvis man ikke gør sig det klart,
+tror man, at man kan sammenligne en bomulds kittel med en polyester/
+bomulds kittel. Det kan man bare ikke. Man skal sammenligne en
+bomuldskittel med en polyester/bomulds kittel og brug af en T-shirt.                        
+                        
+                        </script>
+                    </section>
+                    
+                    <section data-markdown>
+                        <script type="text/template">
+##Ydelsen opdeles funktionelle enheder
+
+En funktionel enhed har tre parametre:
+
+1. en kvantitet (mængde, volumen eller omfang),
+2. en varighed
+3. kvaliteter/egenskaber
+                        </script>
+                    </section>
+                    
+                    <section data-markdown>
+                        <script type="text/template">                  
+##Produktets levetid nedbrydes i faser
+
+Almineligvis:
+
+* Materialefase
+* Produktionsfase
+* Brugsfase
+* Bortskaffelsesfase
+* Transportfase
+
+Andre ... ?
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+##LivsCyklus Analyse Opgørelse
+![Opgørelse](../images/LCA-opgørelse.PNG)
+                        </script>
+                    </section>
+
+                    
+                    <section data-markdown>
+                        <script type="text/template">
+##LivsCyklus Analyse Opgørelse
+![samlet livsforløb](../images/LCA-samlet_livsforløb_for_kaffe_maskine.PNG)
+                        </script>
+                    </section>
+                    
+                    
+<!--                 
+                    <section data-markdown>
+                        <script type="text/template">                  
+                    
+                        </script>
+                    </section>
+-->                
+                </section>
+                
+            <section>  
+                <section data-markdown>
+                    <script type="text/template">
+##Imaterielle produkter
+
+Hva' f\*\*\*\*\* er et programs fodaftryk?
+
+* Der skal en maskine til at afvikle programmet <!-- .element: class="fragment" data-fragment-index="1" -->
+* Der bliver brugt en masse computere til at lave programmet <!-- .element: class="fragment" data-fragment-index="2" -->
+* Programmørerne skal have lys og varme... <!-- .element: class="fragment" data-fragment-index="3" -->
+* Programmet skal distruberes enten på CD'ere eller andre medier eller via internettet <!-- .element: class="fragment" data-fragment-index="4" -->
+* Eventuelt skal programmet hostes (afvikles på en server...) <!-- .element: class="fragment" data-fragment-index="5" -->
+  
+                    </script>
+                </section>
+                
+                 <section data-markdown>
+                        <script type="text/template">                  
+##Det Imeterielle Produktets faser
+
+Muligvis:
+
+* Produktionsfase
+* Brugsfase
+* Transportfase (Distribution)
+
+Eller ... ?
+                        </script>
+                    </section>
+                
+                 <section data-markdown>
+                    <script type="text/template">
+##Det Imaterielle produkts <em>Ydelse</em>
+
+Ydelsen bør vi kende fra produktspecifikationer og markedanalyser.
+
+
+                    </script>
+                </section>
+                
+                 <section data-markdown>
+                    <script type="text/template">
+##Det Imaterielle produkts <em>Funktionelle enheder</em>
+
+Se [Præsentation om teater og øl](../Kristian_Juric-Theater_and_beer.pdf) 
+
+
+                    </script>
+                </section>
+                
+            </section>    
+                
+            
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                
+                overview: true,
+                slideNumber: false,
+                
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                width: 1400,
+                //height: 2000,
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.1,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5,
+                
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
